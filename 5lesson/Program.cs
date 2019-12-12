@@ -10,6 +10,7 @@ namespace _5lesson
             Console.WriteLine(TestPrimalNumber(7));
             Console.WriteLine(TestPrimalNumber(-1));
             Console.WriteLine(TestPrimalNumber(6));
+            Console.WriteLine(D20());
         }
         static bool TestPrimalNumber(int testNumber)
         {
@@ -23,7 +24,12 @@ namespace _5lesson
                 }
             }
             return true;
-
         }
+        static int D20()
+        {
+            Random random = new Random();
+            return random.Next(1, 21) +1 ;
+        }
+
     }
 }
